@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Steven Cheng</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <ul class="header">
+    <li><a href="default.asp">About</a></li>
+    <li><a href="news.asp">Projects</a></li>
+    <li><a href="contact.asp">Contact</a></li>
+  </ul>
+<!-- https://dataveyes.com/#!/en -->
+  <div id="fullpage">
+    <div class="section s1">
+      <img src="images/steven.jpeg" alt="Steven Cheng" class="steven_image">
+      <h1>Steven Cheng</h1>
+      <h2>Class of 2022 | Duke University </h2>
+      <p>
+        I am an aspiring Machine Learning Engineer currently working at the intersection between computer vision and biomedical imaging. My experiences include producing segmentation of lungs from chest x-rays in Tensorflow and Tensorflow.js and image recognition in self-flying drones using OpenCV and Tensorflow.
+      </p>
+    </div>
+    <div class="section s2">
+      <div class="carousel"
+        data-flickity='{ "wrapAround": true, "prevNextButtons": false}'>
+        <div class="carousel-cell">
+          <h1>Lung Segmentation Model</h1>
+        </div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+      </div>
+    </div>
+    <div class="section s3">
+      <h1>Contact</h1>
+      <ul class="contact">
+        <li><a href="default.asp">LinkedIn</a></li>
+        <li><a href="news.asp">GitHub</a></li>
+        <li><a href="contact.asp">Twitter</a></li>
+        <li><a href="contact.asp">Email</a></li>
+      </ul>
+    </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+    	autoScrolling:true,
+      navigation: true,
+      touchSensitivity: 80
+    });
+  </script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>

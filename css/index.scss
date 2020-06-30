@@ -1,0 +1,111 @@
+ul.header {
+  font-family: 'Montserrat';
+  list-style-type: none;
+  position: fixed;
+  text-align: center;
+  padding: 0%;
+  margin-top: 2%;
+  width: 100%;
+  z-index: 1;
+
+  li {
+    display: inline;
+    padding: 2%;
+  }
+}
+
+.s1 {
+  font-family: 'Montserrat';
+  text-align: center;
+
+  .steven_image {
+    display: inline-block;
+    object-fit: cover;
+    width:230px;
+    height:230px;
+    border-radius: 50%;
+    padding: 10pt;
+  }
+  h1 {
+    font-weight:700;
+    font-size: 40px;
+  }
+  h2 {
+    font-weight:400;
+    font-size: 30px;
+    padding: 10pt;
+  }
+  p {
+    font-weight:400;
+    font-size: 20px;
+    width: 66%;
+    display: inline-block;
+    padding: 10pt;
+  }
+}
+
+.s2 {
+  font-family: 'Montserrat';
+  text-align: center;
+
+  h1 {
+    font-weight:700;
+    font-size: 40px;
+  }
+
+  .carousel {
+    height: 75%;
+    margin: auto;
+  }
+
+  .carousel-cell {
+    width: 75%;
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: 2px solid black;
+    counter-increment: carousel-cell;
+  }
+
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+  //
+  // .flickity-prev-next-button.previous {
+  //   left: 15%;
+  // }
+  // .flickity-prev-next-button.next {
+  //   right: 15%;
+  // }
+
+  .flickity-viewport {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}
+
+.s3 {
+  font-family: 'Montserrat';
+  text-align: center;
+
+  h1 {
+
+  }
+
+  ul.contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    // li {
+    //   display: inline;
+    // }
+  }
+}

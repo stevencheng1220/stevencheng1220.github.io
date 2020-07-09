@@ -1,16 +1,11 @@
-ul.header {
+#header {
   font-family: "Montserrat";
-  list-style-type: none;
   position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
   text-align: center;
-  padding: 0%;
-  margin-top: 2%;
-  width: 100%;
   z-index: 1;
-}
-ul.header li {
-  display: inline;
-  padding: 2%;
+  margin-top: 2%;
 }
 
 .s1 {
@@ -29,7 +24,7 @@ ul.header li {
   font-weight: 700;
   font-size: 40px;
 }
-.s1 h2 {
+.s1 #education {
   font-weight: 400;
   font-size: 30px;
   padding: 10pt;
@@ -80,11 +75,6 @@ ul.header li {
 .s3 {
   font-family: "Montserrat";
   text-align: center;
-}
-.s3 ul.contact {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

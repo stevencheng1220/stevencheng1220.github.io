@@ -1,17 +1,11 @@
-ul.header {
-  font-family: 'Montserrat';
-  list-style-type: none;
-  position: fixed;
-  text-align: center;
-  padding: 0%;
-  margin-top: 2%;
-  width: 100%;
-  z-index: 1;
-
-  li {
-    display: inline;
-    padding: 2%;
-  }
+#header {
+    font-family: 'Montserrat';
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    z-index: 1;
+    margin-top: 2%;
 }
 
 .s1 {
@@ -30,7 +24,7 @@ ul.header {
     font-weight:700;
     font-size: 40px;
   }
-  h2 {
+  #education {
     font-weight:400;
     font-size: 30px;
     padding: 10pt;
@@ -95,17 +89,4 @@ ul.header {
 .s3 {
   font-family: 'Montserrat';
   text-align: center;
-
-  h1 {
-
-  }
-
-  ul.contact {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    // li {
-    //   display: inline;
-    // }
-  }
 }

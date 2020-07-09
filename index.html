@@ -2,35 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Steven Cheng</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-  <ul class="header">
-    <li><a href="default.asp">About</a></li>
-    <li><a href="news.asp">Projects</a></li>
-    <li><a href="contact.asp">Contact</a></li>
-  </ul>
-<!-- https://dataveyes.com/#!/en -->
+  <div class="container" id="header">
+    <div class="row">
+      <div class="col-sm"></div>
+      <div class="col-sm">
+        <a href="#home_section">Home</a>
+      </div>
+      <div class="col-sm">
+        <a href="#project_section">Projects</a>
+      </div>
+      <div class="col-sm">
+        <a href="#contact_section">Contact</a>
+      </div>
+      <div class="col-sm"></div>
+    </div>
+  </div>
   <div id="fullpage">
-    <div class="section s1">
+    <div class="section s1" data-anchor="home_section">
       <img src="images/steven.jpeg" alt="Steven Cheng" class="steven_image">
       <h1>Steven Cheng</h1>
-      <h2>Class of 2022 | Duke University </h2>
+      <div class="container" id="education">
+        <div class="row">
+          <div class="col-sm"></div>
+          <div class="col-sm", style="text-align: right">
+            Class of 2022
+          </div>
+          <div class="col-sm", style="text-align: left">
+            Duke University
+          </div>
+          <div class="col-sm"></div>
+        </div>
+      </div>
       <p>
         I am an aspiring Machine Learning Engineer currently working at the intersection between computer vision and biomedical imaging. My experiences include producing segmentation of lungs from chest x-rays in Tensorflow and Tensorflow.js and image recognition in self-flying drones using OpenCV and Tensorflow.
       </p>
     </div>
-    <div class="section s2">
+    <div class="section s2" data-anchor="project_section">
       <div class="carousel"
         data-flickity='{ "wrapAround": true, "prevNextButtons": false}'>
         <div class="carousel-cell">
@@ -42,28 +62,51 @@
         <div class="carousel-cell"></div>
       </div>
     </div>
-    <div class="section s3">
-      <h1>Contact</h1>
-      <ul class="contact">
-        <li><a href="default.asp">LinkedIn</a></li>
-        <li><a href="news.asp">GitHub</a></li>
-        <li><a href="contact.asp">Twitter</a></li>
-        <li><a href="contact.asp">Email</a></li>
-      </ul>
+    <div class="section s3" data-anchor="contact_section">
+      <h1>Links</h1>
+      <div class="container" id="contact_list">
+        <div class="row">
+          <div class="col-sm"></div>
+          <div class="col-sm">
+            <ul class="contact" style="text-align:left">
+              <li class="Email">
+                <h5>Email</h5>
+                <a href="mailto::sc618@duke.edu">sc618@duke.edu</a>
+              </li>
+              <li class="GitHub">
+                <h5>GitHub</h5>
+                <a href="https://github.com/stevencheng1220">stevencheng1220</a>
+              </li>
+              <li class="LinkedIn">
+                <h5>LinkedIn</h5>
+                <a href="https://www.linkedin.com/in/stevencheng1220/">Steven Cheng</a>
+              </li>
+              <li class="Twitter">
+                <h5>Twitter</h5>
+                <a href="https://twitter.com/StevenC07850040">@StevenC07850040</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm"></div>
+        </div>
+      </div>
     </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
   <script>
     new fullpage('#fullpage', {
+      anchors:['home_section', 'project_section','contact_section'],
+      licenseKey: 'D98D14A2-506D4E8E-AA59972E-00D38BF1',
     	autoScrolling:true,
       navigation: true,
       touchSensitivity: 80
     });
   </script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>

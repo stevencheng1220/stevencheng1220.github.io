@@ -8,10 +8,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 
 <body>
@@ -19,13 +18,13 @@
     <div class="row">
       <div class="col-sm"></div>
       <div class="col-sm">
-        <a href="#home_section">Home</a>
+        <a href="#home_section">HOME</a>
       </div>
       <div class="col-sm">
-        <a href="#project_section">Projects</a>
+        <a href="#project_section">PROJECTS</a>
       </div>
       <div class="col-sm">
-        <a href="#contact_section">Contact</a>
+        <a href="#contact_section">CONTACT</a>
       </div>
       <div class="col-sm"></div>
     </div>
@@ -34,60 +33,129 @@
     <div class="section s1" data-anchor="home_section">
       <img src="images/steven.jpeg" alt="Steven Cheng" class="steven_image">
       <h1>Steven Cheng</h1>
-      <div class="container" id="education">
-        <div class="row">
-          <div class="col-sm"></div>
-          <div class="col-sm", style="text-align: right">
-            Class of 2022
-          </div>
-          <div class="col-sm", style="text-align: left">
-            Duke University
-          </div>
-          <div class="col-sm"></div>
-        </div>
-      </div>
+      <h2>Duke University</h2>
       <p>
         I am an aspiring Machine Learning Engineer currently working at the intersection between computer vision and biomedical imaging. My experiences include producing segmentation of lungs from chest x-rays in Tensorflow and Tensorflow.js and image recognition in self-flying drones using OpenCV and Tensorflow.
       </p>
     </div>
     <div class="section s2" data-anchor="project_section">
-      <div class="carousel"
-        data-flickity='{ "wrapAround": true, "prevNextButtons": false}'>
-        <div class="carousel-cell">
-          <h1>Lung Segmentation Model</h1>
+      <h1>Projects</h1>
+      <div class="container-fluid d-flex flex-column vh-85">
+        <div class="row flex-fill d-flex justify-content-start">
+          <div class="col-6 bordered">
+            <div class="card" id="lung_segmentation">
+              <div class="card-body">
+                <h4 class="card-title">Lung Segmentation</h4>
+                <h5 class="card-subtitle">ML Engineer - Gradient Health</h5>
+                <p class="card-text">Developed ML model to create lung masks from chest X-rays.</p>
+                <div class="row">
+                  <div class="column">
+                    <img src="images/lung.jpg" style="width:70%; border-radius: 10px;">
+                  </div>
+                  <div class="column">
+                    <img src="images/arrow.svg" style="width:70%">
+                  </div>
+                  <div class="column">
+                    <img src="images/lung_segmentation.png" style="width:70%; border-radius: 10px;">
+                  </div>
+                </div>
+                <a href="#test-popup" data-effect="mfp-zoom-in" class="stretched-link open-popup-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 bordered">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Drone Object Detection</h4>
+                <h5 class="card-subtitle">Duke AMA</h5>
+                <p class="card-text">Integrated a real-time object recognition algorithm into a drone.</p>
+
+                <a href="#test-popup" data-effect="mfp-zoom-in" class="stretched-link open-popup-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 bordered">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Lung Segmentation</h4>
+                <h5 class="card-subtitle">Gradient Health</h5>
+                <p class="card-text">ML model to generate lung masks from chest X-rays.</p>
+
+                <a href="#test-popup" data-effect="mfp-zoom-in" class="stretched-link open-popup-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 bordered">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Lung Segmentation</h4>
+                <h5 class="card-subtitle">Gradient Health</h5>
+                <p class="card-text">ML model to generate lung masks from chest X-rays.</p>
+
+                <a href="#test-popup" data-effect="mfp-zoom-in" class="stretched-link open-popup-link"></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
       </div>
+
+      <div id="test-popup" class="white-popup mfp-with-anim mfp-hide">
+        <h1>Lung Segmentation</h1>
+        <h3>ML model to generate lung masks from chest X-rays.</h3>
+        <p>
+          Segmentation of lungs in chest x-rays is a necessary first step for lung image analysis and serves as a prerequisite to provide accurate lung disease diagnosis. While there have been many CNNs for lung segmentation developed in Tensorflow, not much has been done in Tensorflow.js, Tensorflow's alternative library using Javascript. Javascript has predominantly served as a front-end framework, but over recent years many back-end and tools have been published.
+        </p>
+        <input type="file" name="lung_xray" id="lung_xray_button_file" accept="image/jpeg, image/png" hidden="hidden" />
+        <button type="button" id="lung_xray_button">Choose a File</button>
+        <div>
+          <canvas id="canvas" width="300" height="200"></canvas>
+        </div>
+        <br></br>
+        <p>
+          An advantage of using Tensorflow.js over Tensorflow is that it provides machine learning tools entirely on the client-side. This means with Tensorflow.js, creating lung segmentations of a chest x-ray requires no server requests as the mask is done in the web browser. Doctors who use this tool do not have to fear patient data and records being transmitted to an unknown server as this can be a patient privacy issue.
+        </p>
+      </div>
+
     </div>
     <div class="section s3" data-anchor="contact_section">
-      <h1>Links</h1>
-      <div class="container" id="contact_list">
-        <div class="row">
-          <div class="col-sm"></div>
-          <div class="col-sm">
-            <ul class="contact" style="text-align:left">
-              <li class="Email">
-                <h5>Email</h5>
-                <a href="mailto::sc618@duke.edu">sc618@duke.edu</a>
-              </li>
-              <li class="GitHub">
-                <h5>GitHub</h5>
-                <a href="https://github.com/stevencheng1220">stevencheng1220</a>
-              </li>
-              <li class="LinkedIn">
-                <h5>LinkedIn</h5>
-                <a href="https://www.linkedin.com/in/stevencheng1220/">Steven Cheng</a>
-              </li>
-              <li class="Twitter">
-                <h5>Twitter</h5>
-                <a href="https://twitter.com/StevenC07850040">@StevenC07850040</a>
-              </li>
-            </ul>
+      <h1>Contact</h1>
+      <div class="container">
+        <div class="contact-row">
+          <div class="inner">
+            <span class="list_logo" id="Email"></span>
+            <div class="list_text">
+              <h5>Email</h5>
+              <a href="mailto::sc618@duke.edu">sc618@duke.edu</a>
+            </div>
           </div>
-          <div class="col-sm"></div>
+          <div class="inner">
+            <span class="list_logo" id="GitHub"></span>
+            <div class="list_text">
+              <h5>GitHub</h5>
+              <a href="https://github.com/stevencheng1220">stevencheng1220</a>
+            </div>
+          </div>
+          <div class="inner">
+            <span class="list_logo" id="LinkedIn"></span>
+            <div class="list_text">
+              <h5>LinkedIn</h5>
+              <a href="https://www.linkedin.com/in/stevencheng1220/">stevencheng1220</a>
+            </div>
+          </div>
+          <div class="inner">
+            <span class="list_logo" id="Twitter"></span>
+            <div class="list_text">
+              <h5>Twitter</h5>
+              <a href="https://twitter.com/sssssssssteven">@sssssssssteven</a>
+            </div>
+          </div>
+          <div class="inner">
+            <span class="list_logo" id="Resume"></span>
+            <div class="list_text">
+              <h5>Resume</h5>
+              <a href="https://drive.google.com/file/d/1YEdXGUhoV8pxx1V1GqerhZ2bbMCU_GM3/view?usp=sharing">Updated 7/8/2020</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -103,10 +171,13 @@
       touchSensitivity: 80
     });
   </script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="js/magnific-popup.js"></script>
+  <script src="js/lung_segmentation.js"></script>
 </body>
 </html>

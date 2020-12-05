@@ -1,13 +1,18 @@
 #header {
+  width: 100vw;
+  background-color: white;
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 18px;
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
-  text-align: center;
   z-index: 1;
-  margin-top: 2%;
+}
+
+#header_cols {
+  margin: 1.25vw;
+  text-align: center;
 }
 
 .s1 {
@@ -78,7 +83,6 @@
   padding: 2px 16px;
 }
 .s2 #lung_segmentation {
-  /* Three image containers (use 25% for four, and 50% for two, etc) */
   /* Clear floats after image containers */
 }
 .s2 #lung_segmentation .column {
@@ -95,51 +99,25 @@
   display: table;
 }
 
-/*====== Zoom effect ======*/
-.mfp-zoom-in {
-  /* start state */
-  /* animate in */
-  /* animate out */
-}
-.mfp-zoom-in .mfp-with-anim {
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-  transform: scale(0.8);
-}
-.mfp-zoom-in.mfp-bg {
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-.mfp-zoom-in.mfp-ready .mfp-with-anim {
-  opacity: 1;
-  transform: scale(1);
-}
-.mfp-zoom-in.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-.mfp-zoom-in.mfp-removing .mfp-with-anim {
-  transform: scale(0.8);
-  opacity: 0;
-}
-.mfp-zoom-in.mfp-removing.mfp-bg {
-  opacity: 0;
-}
-
-/*====== Zoom effect end ======*/
-.white-popup {
+.project_page {
   font-family: "Montserrat";
-  font-weight: 400;
-  position: relative;
-  background: #FFF;
-  padding: 25px;
-  height: 100%;
-  width: 75%;
+  padding: 2vw;
+  width: 95%;
   margin: 0 auto;
 }
-.white-popup h1 {
+.project_page h1 {
   font-weight: 700;
+  font-size: 40px;
 }
-.white-popup #lung_xray_button {
+.project_page h2 {
+  font-weight: 400;
+  font-size: 30px;
+}
+.project_page p {
+  font-weight: 400;
+  font-size: 20px;
+}
+.project_page #lung_xray_button {
   padding: 10px;
   color: white;
   background-color: #009578;
@@ -147,7 +125,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.white-popup #lung_xray_button:hover {
+.project_page #lung_xray_button:hover {
   background-color: #00b28f;
 }
 

@@ -98,6 +98,21 @@
   clear: both;
   display: table;
 }
+.s2 #xprize {
+  /* Clear floats after image containers */
+}
+.s2 #xprize .column {
+  width: 100%;
+  padding: 10px;
+}
+.s2 #xprize .row {
+  disply: inline-block;
+}
+.s2 #xprize .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 .project_page {
   font-family: "Montserrat";

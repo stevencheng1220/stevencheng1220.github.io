@@ -110,36 +110,26 @@
     }
   }
 
+  #xprize {
+    .column {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .row {
+      disply: inline-block;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
 }
 
-
-
-// .project_page {
-//   font-family: 'Montserrat';
-//   font-weight: 400;
-//   position: relative;
-//   padding: 2.5vw;
-//   height: 100%;
-//   width: 75%;
-//   margin: 0 auto;
-//
-//   h1 {
-//     font-weight: 700;
-//   }
-//
-//   #lung_xray_button {
-//     padding: 10px;
-//     color: white;
-//     background-color: #009578;
-//     border: 1px solid #000;
-//     border-radius: 5px;
-//     cursor: pointer;
-//   }
-//
-//   #lung_xray_button:hover {
-//     background-color: #00b28f;
-//   }
-// }
 
 .project_page {
   font-family: 'Montserrat';

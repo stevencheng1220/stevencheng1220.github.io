@@ -9,8 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/index_laptop.css">
+  <link rel="stylesheet" media="screen and (min-width: 420px) and (max-width: 1024px)" href="css/index_tablet.css">
+  <link rel="stylesheet" media="screen and (max-width: 420px)" href="css/index_phone.css">
 </head>
 
 <body>
@@ -33,21 +34,27 @@
     <div class="section s1" data-anchor="home_section">
       <img src="images/steven.jpeg" alt="Steven Cheng" class="steven_image">
       <h1>Steven Cheng</h1>
-      <h2>Duke University</h2>
+      <h2>ECE/CS 2022 - Duke University</h2>
       <p>
-        I am an aspiring Machine Learning Engineer currently working at the intersection between computer vision and biomedical imaging. My experiences include producing segmentation of lungs from chest x-rays in Tensorflow and Tensorflow.js and image recognition in self-flying drones using OpenCV and Tensorflow.
+        I am an aspiring Machine Learning Engineer currently doing research at the intersection between deep learning and the biomedical sciences. My experiences include reducing noise in ultrasound scans with GANs and developing segmentation models of lungs from chest x-rays. In my spare time, I work on drones with ecological conservation purposes; an XPrize project that I am involved in at Duke.
       </p>
     </div>
     <div class="section s2" data-anchor="project_section">
       <h1>Projects</h1>
       <div class="container-fluid d-flex flex-column vh-85">
         <div class="row flex-fill d-flex justify-content-start">
+
           <div class="col-6 bordered">
-            <div class="card">
+            <div class="card" id='mimicknet'>
               <div class="card-body">
                 <h4 class="card-title">Ultrasound with Deep Learning</h4>
-                <h5 class="card-subtitle">Undergrad Researcher - Nightingale Lab</h5>
+                <h5 class="card-subtitle">ML Researcher - Nightingale Lab</h5>
                 <p class="card-text">Reducing Noise in Ultrasound Imaging with GANs.</p>
+                <div class="row">
+                  <div class="column">
+                    <img src="images/xprize.jpg" style="width:80%; border-radius:10px;">
+                  </div>
+                </div>
                 <a href="mimicknet.html" class="stretched-link"></a>
               </div>
             </div>
@@ -74,7 +81,7 @@
               <div class="card-body">
                 <h4 class="card-title">Lung Segmentation</h4>
                 <h5 class="card-subtitle">ML Engineer - Gradient Health</h5>
-                <p class="card-text">Developing ML models to create lung masks from chest X-rays.</p>
+                <p class="card-text">Developing lung segmentation models from chest X-rays.</p>
                 <div class="row">
                   <div class="column">
                     <img src="images/lung.jpg" style="width:70%; border-radius: 10px;">
@@ -92,11 +99,16 @@
           </div>
 
           <div class="col-6 bordered">
-            <div class="card">
+            <div class="card" id="auvsi">
               <div class="card-body">
                 <h4 class="card-title">Drone Object Detection</h4>
                 <h5 class="card-subtitle">ML Engineer - Duke AMA</h5>
                 <p class="card-text">Integrating real-time object detection algorithms into drones.</p>
+                <div class="row">
+                  <div class="column">
+                    <img src="images/xprize.jpg" style="width:80%; border-radius:10px;">
+                  </div>
+                </div>
                 <a href="drone.html" class="stretched-link"></a>
               </div>
             </div>
@@ -159,8 +171,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <script src="js/fullpage.js"></script>
-  <!-- <script src="js/jquery.magnific-popup.js"></script>
-  <script src="js/magnific-popup.js"></script> -->
+  <!-- <script media="screen and (max-width: 1024px)" src="js/fullpage_mobile.js"></script> -->
   <!-- <script src="js/lung_segmentation.js"></script> -->
 </body>
 </html>

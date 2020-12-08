@@ -1,0 +1,259 @@
+#header {
+  width: 100vw;
+  background-color: white;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+#header_cols {
+  margin: 1.25vw;
+  text-align: center;
+}
+
+.s1 {
+  font-family: 'Montserrat';
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  .steven_image {
+    display: inline-block;
+    object-fit: cover;
+    width:230px;
+    height:230px;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  h1 {
+    font-weight:700;
+    font-size: 40px;
+  }
+  h2 {
+    font-weight:400;
+    font-size: 30px;
+    padding: 10px;
+  }
+  p {
+    font-weight:400;
+    font-size: 20px;
+    width: 66%;
+    display: inline-block;
+    padding: 10px;
+  }
+}
+
+
+.s2 {
+  font-family: 'Montserrat';
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  h1 {
+    font-weight:700;
+    font-size: 40px;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 280px;
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 0.75rem;
+  }
+
+  .card-title {
+    font-weight: 700;
+  }
+
+  .card-text {
+    margin: 0.4rem;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  #lung_segmentation {
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+    }
+
+    .row {
+      disply: inline-block;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+  #xprize {
+    .column {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .row {
+      disply: inline-block;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+  #auvsi {
+    .column {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .row {
+      disply: inline-block;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+  #mimicknet {
+    .column {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .row {
+      disply: inline-block;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+}
+
+
+.project_page {
+  font-family: 'Montserrat';
+  padding: 2vw;
+  width: 95%;
+  margin: 0 auto;
+
+  h1 {
+    font-weight:700;
+    font-size: 40px;
+  }
+  h2 {
+    font-weight:400;
+    font-size: 30px;
+  }
+  p {
+    font-weight:400;
+    font-size: 20px;
+    // display: inline-block;
+  }
+
+  #lung_xray_button {
+    padding: 10px;
+    color: white;
+    background-color: #009578;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #lung_xray_button:hover {
+    background-color: #00b28f;
+  }
+
+}
+
+
+.s3 {
+  font-family: 'Montserrat';
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    padding: 10px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-bottom: 60px;
+
+    .inner {
+      margin: auto;
+      width: 220px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .list_logo {
+        float: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 45px;
+      }
+      .list_text {
+        padding-left: 75px;
+        text-align: left;
+      }
+      #Email {
+        background-image: url("../images/Email.svg");
+      }
+      #GitHub {
+        background-image: url("../images/GitHub.svg");
+      }
+      #LinkedIn {
+        background-image: url("../images/LinkedIn.svg");
+      }
+      #Twitter {
+        background-image: url("../images/Twitter.svg");
+      }
+      #Resume {
+        background-image: url("../images/Resume.svg");
+      }
+    }
+  }
+}

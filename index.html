@@ -9,13 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/index_laptop.css">
-  <link rel="stylesheet" media="screen and (min-width: 420px) and (max-width: 1024px)" href="css/index_tablet.css">
-  <link rel="stylesheet" media="screen and (max-width: 420px)" href="css/index_phone.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-  <div class="container" id="header">
+  <!-- <div class="container" id="header">
     <div class="row" id="header_cols">
       <div class="col-sm"></div>
       <div class="col-sm">
@@ -29,60 +27,93 @@
       </div>
       <div class="col-sm"></div>
     </div>
-  </div>
+  </div> -->
+
+  <!-- <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#home_section">HOME</a></li>
+          <li><a href="#about_section">ABOUT ME</a></li>
+          <li><a href="#project_section">PROJECTS</a></li>
+          <li><a href="#contact_section">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+
+
   <div id="fullpage">
-    <div class="section s1" data-anchor="home_section">
+    <div class="section s0" data-anchor="home_section">
+      <h1>Welcome to my website!</h1>
       <img src="images/steven.jpeg" alt="Steven Cheng" class="steven_image">
-      <h1>Steven Cheng</h1>
-      <h2>ECE/CS 2022 - Duke University</h2>
+      <h2>My name is <strong><u>Steven Cheng</u></strong> and I'm currently a 3rd year ECE/CS student studying at Duke University.</h2>
+    </div>
+
+
+    <div class="section s1" data-anchor="about_section">
+      <h1>About Me</h1>
       <p>
-        I am an aspiring Machine Learning Engineer currently doing research at the intersection between deep learning and the biomedical sciences. My experiences include reducing noise in ultrasound scans with GANs and developing segmentation models of lungs from chest x-rays. In my spare time, I work on drones with ecological conservation purposes; an XPrize project that I am involved in at Duke.
+        I am an aspiring Machine Learning Engineer currently doing research at the intersection between machine learning and the biomedical sciences. My experiences include reducing noise in ultrasound scans with GANs and developing segmentation models of lungs from chest x-rays. In my spare time, I work on drones with ecological conservation purposes; an XPrize project that I am involved in at Duke.
       </p>
     </div>
+
+
+
     <div class="section s2" data-anchor="project_section">
       <h1>Projects</h1>
       <div class="container-fluid d-flex flex-column vh-85">
         <div class="row flex-fill d-flex justify-content-start">
 
-          <div class="col-6 bordered">
+          <div class="col col-12 col-md-6 bordered">
             <div class="card" id='mimicknet'>
               <div class="card-body">
                 <h4 class="card-title">Ultrasound with Deep Learning</h4>
                 <h5 class="card-subtitle">ML Researcher - Nightingale Lab</h5>
-                <p class="card-text">Reducing Noise in Ultrasound Imaging with GANs.</p>
-                <div class="row">
+                <h6 class="card-text">Reducing Noise in Ultrasound Imaging with GANs.</h6>
+                <!-- <div class="row">
                   <div class="column">
                     <img src="images/xprize.jpg" style="width:80%; border-radius:10px;">
                   </div>
-                </div>
+                </div> -->
                 <a href="mimicknet.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
 
-          <div class="col-6 bordered">
+          <div class="col col-12 col-md-6 bordered">
             <div class="card" id="xprize">
               <div class="card-body">
                 <h4 class="card-title">Rainforest Conservation with Drones</h4>
                 <h5 class="card-subtitle">SWE - XPrize Duke Team </h5>
-                <p class="card-text">Developing drones for environmental conservation.</p>
-                <div class="row">
+                <h6 class="card-text">Developing drones for environmental conservation.</h6>
+                <!-- <div class="row">
                   <div class="column">
                     <img src="images/xprize.jpg" style="width:80%; border-radius:10px;">
                   </div>
-                </div>
+                </div> -->
                 <a href="xprize.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
 
-          <div class="col-6 bordered">
+          <div class="col col-12 col-md-6 bordered">
             <div class="card" id="lung_segmentation">
               <div class="card-body">
                 <h4 class="card-title">Lung Segmentation</h4>
                 <h5 class="card-subtitle">ML Engineer - Gradient Health</h5>
-                <p class="card-text">Developing lung segmentation models from chest X-rays.</p>
-                <div class="row">
+                <h6 class="card-text">Developing lung segmentation models from chest X-rays.</h6>
+                <!-- <div class="row">
                   <div class="column">
                     <img src="images/lung.jpg" style="width:70%; border-radius: 10px;">
                   </div>
@@ -92,23 +123,23 @@
                   <div class="column">
                     <img src="images/lung_segmentation.png" style="width:70%; border-radius: 10px;">
                   </div>
-                </div>
+                </div> -->
                 <a href="lung_segmentation.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
 
-          <div class="col-6 bordered">
+          <div class="col col-12 col-md-6 bordered">
             <div class="card" id="auvsi">
               <div class="card-body">
                 <h4 class="card-title">Drone Object Detection</h4>
                 <h5 class="card-subtitle">ML Engineer - Duke AMA</h5>
-                <p class="card-text">Integrating real-time object detection algorithms into drones.</p>
-                <div class="row">
+                <h6 class="card-text">Integrating real-time object detection algorithms into drones.</h6>
+                <!-- <div class="row">
                   <div class="column">
                     <img src="images/xprize.jpg" style="width:80%; border-radius:10px;">
                   </div>
-                </div>
+                </div> -->
                 <a href="drone.html" class="stretched-link"></a>
               </div>
             </div>
@@ -116,9 +147,10 @@
 
         </div>
       </div>
-
-
     </div>
+
+
+
     <div class="section s3" data-anchor="contact_section">
       <h1>Contact</h1>
       <div class="container">
@@ -169,7 +201,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
   <script src="js/fullpage.js"></script>
   <!-- <script media="screen and (max-width: 1024px)" src="js/fullpage_mobile.js"></script> -->
   <!-- <script src="js/lung_segmentation.js"></script> -->

@@ -1,0 +1,169 @@
+#header {
+  width: 100vw;
+  background-color: white;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+#header_cols {
+  margin: 1.25vw;
+  text-align: center;
+}
+
+#fullpage {
+  font-family: "Montserrat";
+  max-width: 350px;
+  margin: 0 auto;
+  height: 100%;
+}
+#fullpage h1 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+#fullpage h2 {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+#fullpage p {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+  padding: 20px;
+}
+
+.s0 .steven_image {
+  display: block;
+  margin: auto auto;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.s2 .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+}
+.s2 .card-body {
+  padding: 10px;
+}
+.s2 .card-title {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.s2 .card-subtitle {
+  display: none;
+}
+.s2 .card-text {
+  display: none;
+}
+
+.s3 .contact-row {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.s3 .contact-row .inner {
+  margin: auto;
+  width: 220px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.s3 .contact-row .inner .list_logo {
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+}
+.s3 .contact-row .inner .list_text {
+  padding-left: 75px;
+  text-align: left;
+}
+.s3 .contact-row .inner #Email {
+  background-image: url("../images/Email.svg");
+}
+.s3 .contact-row .inner #GitHub {
+  background-image: url("../images/GitHub.svg");
+}
+.s3 .contact-row .inner #LinkedIn {
+  background-image: url("../images/LinkedIn.svg");
+}
+.s3 .contact-row .inner #Twitter {
+  background-image: url("../images/Twitter.svg");
+}
+.s3 .contact-row .inner #Resume {
+  background-image: url("../images/Resume.svg");
+}
+
+@media (min-width: 768px) {
+  #fullpage {
+    max-width: 600px;
+  }
+
+  .s2 .card {
+    height: 200px;
+  }
+  .s2 .card-title {
+    font-weight: 700;
+  }
+  .s2 .card-subtitle {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+  }
+  .s2 .container {
+    padding: 2px 16px;
+  }
+}
+@media (min-width: 992px) {
+  #fullpage {
+    max-width: 800px;
+  }
+
+  .s2 .card {
+    height: 250px;
+  }
+  .s2 .card-subtitle {
+    text-align: left;
+  }
+  .s2 .card-text {
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+  }
+  .s2 .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+@media (min-width: 1200px) {
+  #fullpage {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1400px) {
+  #fullpage {
+    max-width: 1120px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,29 +1,34 @@
 #header {
-  width: 100vw;
-  background-color: white;
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 18px;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 1;
+  display: none;
 }
 
-#header_cols {
-  margin: 1.25vw;
-  text-align: center;
+#navbar-div {
+  font-family: "Montserrat";
+  display: block;
+  position: fixed;
+  z-index: 1;
+}
+#navbar-div .scrolling {
+  width: 100%;
+}
+#navbar-div .nav-header {
+  position: fixed;
+  z-index: 3;
+  transition: 0.3s;
+}
+#navbar-div .bg-light {
+  background-color: #f8f9fa;
 }
 
 #fullpage {
   font-family: "Montserrat";
   max-width: 350px;
-  margin: 0 auto;
+  margin: 15px auto 0px;
   height: 100%;
 }
 #fullpage h1 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   padding: 10px;
 }
@@ -35,7 +40,7 @@
 }
 #fullpage p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   text-align: left;
   padding: 20px;
 }
@@ -113,9 +118,41 @@
   background-image: url("../images/Resume.svg");
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #fullpage {
     max-width: 600px;
+  }
+  #fullpage h1 {
+    font-size: 40px;
+  }
+  #fullpage h2 {
+    font-size: 20px;
+  }
+  #fullpage p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  #navbar-div {
+    display: none;
+  }
+
+  #header {
+    display: block;
+    width: 80%;
+    background-color: white;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 18px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+  }
+
+  #header_cols {
+    margin: 1.25vw;
+    text-align: center;
   }
 
   .s2 .card {

@@ -8,11 +8,4 @@ $(document).ready(function() {
 		animateAnchor: false,
 		responsive: 992,
 	});
-
-	// $(window).resize(function() {
-  //   	if (window.innerWidth > 767) {
-	//     	navbar.removeClass("scroll-up");
-	//     	navbar.addClass("scrolling");
-	//     }
-  //   });
 });

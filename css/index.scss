@@ -1,30 +1,52 @@
-
 #header {
-  width: 100vw;
-  background-color: white;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 18px;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 1;
+  display: none;
 }
 
-#header_cols {
-  margin: 1.25vw;
-  text-align: center;
+#navbar-div {
+  font-family: 'Montserrat';
+  display: block;
+  position: fixed;
+  z-index: 1;
+
+
+  .scrolling {
+    width: 100%;
+  }
+  .nav-header {
+    position: fixed;
+    z-index: 3;
+    // box-shadow: 0 0.5px 1px #888888;
+    transition: 0.3s;
+  }
+  // #navbar-section {
+  //     margin: 0;
+  //     padding-right: 6px;
+  //     padding-left: 6px;
+  // }
+  .bg-light {
+      background-color: #f8f9fa;
+  }
+  // .navbar {
+  //   position: relative;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   padding: .5rem 1rem;
+  // }
 }
+
+
 
 #fullpage {
   font-family: 'Montserrat';
   max-width: 350px;
-  margin: 0 auto;
+  margin: 15px auto 0px;
   height: 100%;
 
   h1 {
     font-weight:700;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     padding: 10px;
   }
@@ -36,7 +58,7 @@
   }
   p {
     font-weight:400;
-    font-size: 18px;
+    font-size: 15px;
     text-align: left;
     padding: 20px;
   }
@@ -56,7 +78,9 @@
 }
 
 
-.s1 {   }
+.s1 {
+  // margin: 15px 30px 30px 0px!important;
+}
 
 
 .s2 {
@@ -128,12 +152,42 @@
   }
 }
 
-
-
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #fullpage {
     max-width: 600px;
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 18px;
+    }
   }
+}
+
+@media (min-width: 768px) {
+  #navbar-div {
+    display: none;
+  }
+  #header {
+    display: block;
+    width: 80%;
+    background-color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+  }
+  #header_cols {
+    margin: 1.25vw;
+    text-align: center;
+  }
+
   .s2 {
     .card {
       height: 200px;

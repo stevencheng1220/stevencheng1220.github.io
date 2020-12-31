@@ -4,6 +4,7 @@
 
 #navbar-div {
   font-family: 'Montserrat';
+  font-weight:700;
   display: block;
   position: fixed;
   top: 0;
@@ -11,13 +12,16 @@
   transition: 0.3s;
   width: 100%;
 
-  border-bottom: 1px solid gray;
+  box-shadow: 0 0.5px 1px #888888;
   background-color: white;
 
   #navbar-section {
-    padding: 16px;
+    padding: 0px;
   }
 
+  .navbar-toggler {
+    border: none;
+  }
   .nav-list {
     display: flex;
     flex-direction: column;

@@ -6,18 +6,24 @@
   font-family: "Montserrat";
   display: block;
   position: fixed;
+  top: 0;
   z-index: 1;
-}
-#navbar-div .scrolling {
-  width: 100%;
-}
-#navbar-div .nav-header {
-  position: fixed;
-  z-index: 3;
   transition: 0.3s;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  background-color: white;
 }
-#navbar-div .bg-light {
-  background-color: #f8f9fa;
+#navbar-div #navbar-section {
+  padding: 16px;
+}
+#navbar-div .nav-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#navbar-div .nav-a {
+  padding: 10px 0px 10px 0px;
 }
 
 #fullpage {

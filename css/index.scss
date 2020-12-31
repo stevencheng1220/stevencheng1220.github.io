@@ -6,35 +6,30 @@
   font-family: 'Montserrat';
   display: block;
   position: fixed;
+  top: 0;
   z-index: 1;
+  transition: 0.3s;
+  width: 100%;
 
+  border-bottom: 1px solid gray;
+  background-color: white;
 
-  .scrolling {
-    width: 100%;
+  #navbar-section {
+    padding: 16px;
   }
-  .nav-header {
-    position: fixed;
-    z-index: 3;
-    // box-shadow: 0 0.5px 1px #888888;
-    transition: 0.3s;
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
   }
-  // #navbar-section {
-  //     margin: 0;
-  //     padding-right: 6px;
-  //     padding-left: 6px;
-  // }
-  .bg-light {
-      background-color: #f8f9fa;
+  .nav-a {
+    padding: 10px 0px 10px 0px;
   }
-  // .navbar {
-  //   position: relative;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   align-items: center;
-  //   justify-content: space-between;
-  //   padding: .5rem 1rem;
-  // }
 }
+
+
 
 
 

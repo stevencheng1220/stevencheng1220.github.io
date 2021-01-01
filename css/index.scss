@@ -19,9 +19,16 @@
     padding: 5px 0px 5px;
   }
 
-  .navbar-toggler {
-    border: none;
-  }
+  // .navbar-toggler {
+  //   border: none;
+  //   // display: block;
+  //   // position: fixed;
+  //   // float: right;
+  // }
+  // .navbar-icon{
+  //   // display: ;
+  //   float: right;
+  // }
   .nav-list {
     display: flex;
     flex-direction: column;
@@ -39,7 +46,7 @@
 
 #fullpage {
   font-family: 'Montserrat';
-  max-width: 350px;
+  max-width: 330px;
   margin: 15px auto 0px;
   height: 100%;
 
@@ -175,7 +182,7 @@
     width: 80%;
     background-color: white;
     font-family: 'Montserrat';
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     position: fixed;
     left: 50%;

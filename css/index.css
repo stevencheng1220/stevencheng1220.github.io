@@ -17,6 +17,9 @@
 #navbar-div #navbar-section {
   padding: 5px 0px 5px;
 }
+#navbar-div .navbar-toggler {
+  border: none;
+}
 #navbar-div .nav-list {
   display: flex;
   flex-direction: column;

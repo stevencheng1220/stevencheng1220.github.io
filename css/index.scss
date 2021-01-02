@@ -6,6 +6,9 @@
   font-family: 'Montserrat';
   font-weight: 700;
   display: block;
+
+
+
   position: fixed;
   top: 0;
   z-index: 1;
@@ -17,15 +20,16 @@
 
   #navbar-section {
     padding: 5px 0px 5px;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    /* justify-content places parallel to the flex-flow direction */
+    /* align-items places perpendicular to flex-flow */
   }
 
   .navbar-toggler {
     border: none;
   }
-  // .navbar-icon{
-  //   // display: ;
-  //   float: right;
-  // }
   .nav-list {
     display: flex;
     flex-direction: column;

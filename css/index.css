@@ -16,6 +16,11 @@
 }
 #navbar-div #navbar-section {
   padding: 5px 0px 5px;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  /* justify-content places parallel to the flex-flow direction */
+  /* align-items places perpendicular to flex-flow */
 }
 #navbar-div .navbar-toggler {
   border: none;

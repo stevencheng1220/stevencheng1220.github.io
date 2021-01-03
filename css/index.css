@@ -57,6 +57,11 @@
   text-align: center;
   padding: 20px;
 }
+#fullpage h4 {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
 #fullpage p {
   font-weight: 400;
   font-size: 15px;
@@ -85,12 +90,12 @@
 }
 .s2 .card-body {
   padding: 10px;
-  text-align: center;
-  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .s2 .card-title {
-  font-weight: 400;
-  font-size: 18px;
+  margin-bottom: 0px;
 }
 .s2 .card-subtitle {
   display: none;

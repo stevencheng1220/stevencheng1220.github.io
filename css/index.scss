@@ -63,6 +63,11 @@
     text-align: center;
     padding: 20px;
   }
+  h4 {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+  }
   p {
     font-weight:400;
     font-size: 15px;
@@ -86,7 +91,7 @@
 
 
 .s1 {
-  // margin: 15px 30px 30px 0px!important;
+
 }
 
 
@@ -102,12 +107,12 @@
   }
   .card-body {
     padding: 10px;
-    text-align: center;
-    margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
   .card-title {
-    font-weight: 400;
-    font-size: 18px;
+    margin-bottom: 0px;
   }
   .card-subtitle {
     display: none;

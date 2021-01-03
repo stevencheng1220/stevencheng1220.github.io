@@ -98,15 +98,16 @@
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
-    height: 100px;
+    height: 90px;
   }
   .card-body {
     padding: 10px;
+    text-align: center;
+    margin: auto;
   }
   .card-title {
     font-weight: 400;
-    font-size: 20px;
-    text-align: center;
+    font-size: 18px;
   }
   .card-subtitle {
     display: none;

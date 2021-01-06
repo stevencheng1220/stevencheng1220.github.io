@@ -27,8 +27,7 @@
 }
 #navbar-div .nav-list {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column;
   text-align: center;
 }
 #navbar-div .nav-a {
@@ -44,23 +43,21 @@
   max-width: 330px;
   margin: 15px auto 0px;
   height: 100%;
+  text-align: center;
 }
 #fullpage h1 {
   font-weight: 700;
   font-size: 30px;
-  text-align: center;
   padding: 10px;
 }
 #fullpage h2 {
   font-weight: 400;
   font-size: 20px;
-  text-align: center;
   padding: 20px;
 }
 #fullpage h4 {
   font-weight: 400;
   font-size: 18px;
-  text-align: center;
 }
 #fullpage p {
   font-weight: 400;
@@ -101,6 +98,9 @@
   display: none;
 }
 .s2 .card-text {
+  display: none;
+}
+.s2 .project_image {
   display: none;
 }
 
@@ -145,16 +145,7 @@
 
 @media (min-width: 576px) {
   #fullpage {
-    max-width: 600px;
-  }
-  #fullpage h1 {
-    font-size: 40px;
-  }
-  #fullpage h2 {
-    font-size: 20px;
-  }
-  #fullpage p {
-    font-size: 18px;
+    max-width: 500px;
   }
 }
 @media (min-width: 768px) {
@@ -184,45 +175,81 @@
     padding-top: 0px;
   }
 
+  #fullpage {
+    max-width: 600px;
+  }
+  #fullpage h1 {
+    font-size: 40px;
+  }
+  #fullpage h2 {
+    font-size: 20px;
+  }
+  #fullpage h4 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  #fullpage h5 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  #fullpage p {
+    font-size: 18px;
+  }
+
   .s0 .steven_image {
     padding: 30px;
   }
 
   .s2 .card {
-    height: 200px;
+    height: 150px;
+  }
+  .s2 .card-body {
+    flex-flow: column;
   }
   .s2 .card-title {
-    font-weight: 700;
+    padding: 6px;
   }
   .s2 .card-subtitle {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 15px;
+    display: flex;
+    padding: 6px;
     text-align: center;
-    padding: 10px;
   }
   .s2 .container {
     padding: 2px 16px;
+  }
+  .s2 .card-computer-text {
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
   }
 }
 @media (min-width: 992px) {
   #fullpage {
     max-width: 800px;
   }
+  #fullpage h6 {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
 
   .s2 .card {
-    height: 250px;
+    height: 220px;
   }
-  .s2 .card-subtitle {
-    text-align: left;
-  }
-  .s2 .card-text {
-    display: inline-block;
-    text-align: left;
-    padding: 10px;
+  .s2 .card-body {
+    flex-flow: row;
   }
   .s2 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .s2 .project_image {
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
   }
 }
 @media (min-width: 1200px) {

@@ -32,8 +32,8 @@
   }
   .nav-list {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column;
+    // flex-wrap: wrap;
     text-align: center;
   }
   .nav-a {
@@ -50,23 +50,21 @@
   max-width: 330px;
   margin: 15px auto 0px;
   height: 100%;
+  text-align: center;
 
   h1 {
     font-weight:700;
     font-size: 30px;
-    text-align: center;
     padding: 10px;
   }
   h2 {
     font-weight:400;
     font-size: 20px;
-    text-align: center;
     padding: 20px;
   }
   h4 {
     font-weight: 400;
     font-size: 18px;
-    text-align: center;
   }
   p {
     font-weight:400;
@@ -107,7 +105,7 @@
   }
   .card-body {
     padding: 10px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -118,6 +116,9 @@
     display: none;
   }
   .card-text {
+    display: none;
+  }
+  .project_image {
     display: none;
   }
 }
@@ -167,16 +168,7 @@
 
 @media (min-width: 576px) {
   #fullpage {
-    max-width: 600px;
-    h1 {
-      font-size: 40px;
-    }
-    h2 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 18px;
-    }
+    max-width: 500px;
   }
 }
 
@@ -204,6 +196,27 @@
     padding-top: 0px;
   }
 
+  #fullpage {
+    max-width: 600px;
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    h5 {
+      font-weight: 400;
+      font-size: 15px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
   .s0 {
     .steven_image {
       padding: 30px;
@@ -212,20 +225,29 @@
 
   .s2 {
     .card {
-      height: 200px;
+      height: 150px;
+    }
+    .card-body {
+      flex-flow: column;
     }
     .card-title {
-      font-weight: 700;
+      padding: 6px;
     }
     .card-subtitle {
-      display: inline-block;
-      font-weight: 400;
-      font-size: 15px;
+      display: flex;
+      padding: 6px;
       text-align: center;
-      padding: 10px;
     }
     .container {
       padding: 2px 16px;
+    }
+    .card-computer-text {
+      width: 80%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
     }
   }
 }
@@ -234,21 +256,27 @@
 @media (min-width: 992px) {
   #fullpage {
     max-width: 800px;
+    h6 {
+      display: flex;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+    }
   }
   .s2 {
     .card {
-      height: 250px;
+      height: 220px;
     }
-    .card-subtitle {
-      text-align: left;
-    }
-    .card-text {
-      display: inline-block;
-      text-align: left;
-      padding: 10px;
+    .card-body {
+      flex-flow: row;
     }
     .card:hover {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .project_image {
+      display: flex;
+      margin: 10px;
+      border-radius: 10px;
     }
   }
 }

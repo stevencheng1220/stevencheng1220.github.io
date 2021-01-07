@@ -52,7 +52,7 @@
 }
 #fullpage h2 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   padding: 20px;
 }
 #fullpage h4 {
@@ -70,8 +70,8 @@
   display: block;
   margin: auto auto;
   object-fit: cover;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   padding: 20px;
 }
@@ -177,6 +177,7 @@
 
   #fullpage {
     max-width: 600px;
+    margin: 0px auto 0px;
   }
   #fullpage h1 {
     font-size: 40px;
@@ -198,6 +199,8 @@
 
   .s0 .steven_image {
     padding: 30px;
+    width: 300px;
+    height: 300px;
   }
 
   .s2 .card {

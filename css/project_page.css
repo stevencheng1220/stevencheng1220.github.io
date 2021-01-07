@@ -24,6 +24,11 @@ p {
   padding: 5px;
 }
 
+a {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 576px) {
   body {
     max-width: 518px;

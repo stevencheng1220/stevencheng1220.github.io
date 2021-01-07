@@ -7,8 +7,8 @@
   <title>Steven Cheng</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="node_modules/img-slider/distr/imgslider.min.css">
   <link rel="stylesheet" href="css/project_page.css">
 </head>
 
@@ -17,18 +17,52 @@
     <h1>Ultrasound with Deep Learning</h1>
     <h2>Reducing Noise in Ultrasound Imaging with GANs.</h3>
     <p>
-      Currently, ultrasound scanners are susceptible to many sources of image degradation. Post-processing techniques are often required to reduce noise and generate an image that a doctor can evaluate with. Unfortunately, commercial post-processing algorithms are often proprietary. As a result, researchers at Duke developed a version of this image processing technique with machine learning models.
+      Currently, ultrasound scanners are susceptible to many sources of image degradation. Post-processing techniques are often required to reduce noise and generate an image that a doctor can evaluate with. Unfortunately, commercial post-processing algorithms are often proprietary. As a result, I worked with researchers at Duke to develop a mimic of this image processing technique with U-Net architectures.
     </p>
-    <input type="file" name="lung_xray" id="lung_xray_button_file" accept="image/jpeg, image/png" hidden="hidden" />
+    <p>
+      Below is a demo of MimickNet. We developed a model in Tensorflow and ported it to Tensorflow.js for mobile and edge device use. Simply upload a raw ultrasound scan and the model will reduce noise artifacts from the image.
+    </p>
+    <!-- <input type="file" name="lung_xray" id="lung_xray_button_file" accept="image/jpeg, image/png" hidden="hidden" />
     <button type="button" id="lung_xray_button">Choose a File</button>
     <div>
       <canvas id="canvas" width="300" height="200"></canvas>
-    </div>
-    <br></br>
-    <p>
-      An advantage of using Tensorflow.js over Tensorflow is that it provides machine learning tools entirely on the client-side. This means with Tensorflow.js, creating lung segmentations of a chest x-ray requires no server requests as the mask is done in the web browser. Doctors who use this tool do not have to fear patient data and records being transmitted to an unknown server as this can be a patient privacy issue.
-    </p>
-  </div>
-</body>
+    </div> -->
+    <br>
+    <div class="slider" style="width:30%;">
 
+      <div class="slider responsive">
+
+        <div class="left image">
+
+          <img src="images/auvsi.png"/>
+
+        </div>
+
+        <div class="right image">
+
+          <img src="images/xprize.png"/>
+
+        </div>
+
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <p>
+      For more information, please visit our GitHub repos!
+    </p>
+    <a href="https://github.com/Ouwen/MimickNet">Original MimickNet</a>
+    <br>
+    <a href="https://github.com/stevencheng1220/MimickNet_V2">New MimickNet</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="node_modules/img-slider/distr/imgslider.min.js"></script>
+
+  <script type="text/javascript">
+    $('.slider').slider();
+  </script>
+
+</body>
 </html>

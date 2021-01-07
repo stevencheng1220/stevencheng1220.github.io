@@ -68,7 +68,7 @@
   }
   p {
     font-weight:400;
-    font-size: 15px;
+    font-size: 16px;
     text-align: left;
     padding: 20px;
   }
@@ -242,7 +242,7 @@
       padding: 2px 16px;
     }
     .card-computer-text {
-      width: 80%;
+      width: 90%;
       display: flex;
       flex-flow: column;
       align-items: center;
@@ -297,47 +297,6 @@
 
 
 
-// .s2 {
-
-//
-//   #lung_segmentation {
-//     .column {
-//       float: left;
-//       width: 33.33%;
-//       padding: 10px;
-//     }
-//
-//     .row {
-//       disply: inline-block;
-//     }
-//
-//     /* Clear floats after image containers */
-//     .row::after {
-//       content: "";
-//       clear: both;
-//       display: table;
-//     }
-//   }
-//
-//   #xprize {
-//     .column {
-//       width: 100%;
-//       padding: 10px;
-//     }
-//
-//     .row {
-//       disply: inline-block;
-//     }
-//
-//     /* Clear floats after image containers */
-//     .row::after {
-//       content: "";
-//       clear: both;
-//       display: table;
-//     }
-//   }
-//
-// }
 
 
 // .project_page {

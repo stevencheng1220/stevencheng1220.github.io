@@ -1,42 +1,31 @@
 body {
   font-family: 'Montserrat';
   max-width: 330px;
-  margin: 15px auto 0px;
+  margin: 20px auto 20px;
   height: 100%;
-  padding-top: 10px;
+  text-align: left;
 }
 
 h1 {
   font-weight:700;
   font-size: 30px;
-  text-align: left;
+  padding: 5px;
 }
 h2 {
   font-weight:400;
   font-size: 20px;
-  text-align: left;
+  padding: 5px;
 }
 p {
   font-weight:400;
   font-size: 15px;
-  text-align: left;
+  padding: 5px;
 }
 
 
 @media (min-width: 576px) {
   body {
     max-width: 518px;
-    padding-top: 20px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-  p {
-    font-size: 18px;
   }
 }
 
@@ -45,6 +34,15 @@ p {
 @media (min-width: 768px) {
   body {
     max-width: 691px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 18px;
   }
 }
 

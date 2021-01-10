@@ -24,9 +24,9 @@ p {
   padding: 5px;
 }
 
-a {
-  display: flex;
-  justify-content: center;
+.lung_segmentation {
+  margin: auto;
+  width: 70%;
 }
 
 @media (min-width: 576px) {
@@ -50,6 +50,10 @@ a {
   p {
     font-size: 18px;
   }
+
+  .lung_segmentation {
+    width: 60%;
+  }
 }
 @media (min-width: 992px) {
   body {
@@ -59,6 +63,10 @@ a {
 @media (min-width: 1200px) {
   body {
     max-width: 1080px;
+  }
+
+  .lung_segmentation {
+    width: 50%;
   }
 }
 @media (min-width: 1400px) {

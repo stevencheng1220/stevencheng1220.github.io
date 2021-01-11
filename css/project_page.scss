@@ -27,6 +27,13 @@ p {
   width: 75%;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
 
 @media (min-width: 576px) {
   body {
@@ -52,6 +59,9 @@ p {
   .lung_segmentation{
     width: 60%;
   }
+  .center {
+    width: 60%;
+  }
 }
 
 
@@ -67,6 +77,9 @@ p {
     max-width: 1080px;
   }
   .lung_segmentation{
+    width: 50%;
+  }
+  .center {
     width: 50%;
   }
 }

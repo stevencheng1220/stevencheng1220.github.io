@@ -17,8 +17,8 @@ jQuery, and fullPage.js load from CDNs.
 
 ## Gotchas
 
-- `node_modules/` (jQuery, img-slider) is committed but no page loads it; pages use CDN jQuery and
-  the copies in `js/imgslider.min.js` and `css/imgslider.min.css` → edit those copies.
+- img-slider has no package or CDN source here; its only copies are `js/imgslider.min.js` and
+  `css/imgslider.min.css` → edit those copies.
 - `d41d8cd9.htaccess` is an Apache rewrite that GitHub Pages never applies → never rely on it for
   routing.
 - `js/load_header.js` loads a `header_div.html` that does not exist, no page includes it, and

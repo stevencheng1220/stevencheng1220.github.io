@@ -2,7 +2,8 @@
 
 Publishes Steven Cheng's personal site, with his resume and project write-ups, at [csteven.io](http://csteven.io).
 
-GitHub Pages serves `master` as static files, with no build step. Preview a change locally, then
+GitHub Pages serves `master` from the repository root, with no build step. Pages live in
+`html/`; root HTML files redirect existing URLs to them. Preview a change locally, then
 open `http://localhost:8000`:
 
 ```sh

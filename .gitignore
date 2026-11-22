@@ -4,7 +4,7 @@ plans/
 node_modules/
 
 # Working plans, generated relay output and local documentation categories
-/.relay/
+.relay/
 /docs/technical_docs/
 /docs/research_docs/
 /docs/backlog_docs/

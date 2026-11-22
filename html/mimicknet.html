@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Steven Cheng</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/imgslider.min.css">
+  <link rel="stylesheet" href="../css/project_page.css">
+</head>
+
+<body>
+  <div class="project_page">
+    <h1>Ultrasound with Deep Learning</h1>
+    <h2>Reducing Noise in Ultrasound Imaging with GANs.</h3>
+    <p>
+      Currently, ultrasound scanners are susceptible to many sources of image degradation. Post-processing techniques are often required to reduce noise and generate an image that a doctor can evaluate with. Unfortunately, commercial post-processing algorithms are often proprietary. As a result, I worked with researchers at Duke to develop a mimic of this image processing technique with U-Net architectures.
+    </p>
+    <p>
+      Below is a demo of MimickNet. We developed a model in Tensorflow and ported it to Tensorflow.js for mobile and edge device use. Simply upload a raw ultrasound scan and the model will reduce noise artifacts from the image.
+    </p>
+    <br>
+    <div class="slider lung_segmentation">
+
+      <div class="slider responsive">
+
+        <div class="left image">
+
+          <img src="../images/auvsi.png"/>
+
+        </div>
+
+        <div class="right image">
+
+          <img src="../images/xprize.png"/>
+
+        </div>
+
+      </div>
+
+    </div>
+    <br><br>
+    <p>
+      For more information, please visit our GitHub repos! For the original MimickNet, <a href="https://github.com/Ouwen/MimickNet">click here</a>. For the new MimickNet, <a href="https://github.com/stevencheng1220/MimickNet_V2">click here</a>.
+    </p>
+    <br>
+    <p>
+      For a demo, please <a href="mimicknetdemo.html">click here</a>.
+    </p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/imgslider.min.js"></script>
+
+  <script type="text/javascript">
+    $(".slider").slider();
+  </script>
+
+</body>
+</html>

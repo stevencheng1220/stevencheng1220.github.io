@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Steven Cheng</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <div id="header">
+    <div class="row" id="header_cols">
+      <div class="col col-3">
+        <a href="#home_section">HOME</a>
+      </div>
+      <div class="col col-3">
+        <a href="#about_section">ABOUT</a>
+      </div>
+      <div class="col col-3">
+        <a href="#project_section">PROJECTS</a>
+      </div>
+      <div class="col col-3">
+        <a href="#contact_section">CONTACT</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="navbar-div" class="pos-f-t nav-header scrolling">
+		<nav id="navbar-section" class="navbar navbar-light">
+			<button class="navbar-toggler navbar-icon collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
+		<div class="collapse" id="navbarToggleExternalContent">
+			<div class="p-4 nav-list">
+				<a class="text-muted nav-a" href="#home_section">HOME</a>
+				<a class="text-muted nav-a" href="#about_section">ABOUT ME</a>
+				<a class="text-muted nav-a" href="#project_section">PROJECTS</a>
+				<a class="text-muted nav-a" href="#contact_section">CONTACT</a>
+			</div>
+		</div>
+	</div>
+
+
+
+  <div id="fullpage">
+    <div class="section s0" data-anchor="home_section">
+      <h1>Welcome to my website!</h1>
+      <img src="../images/steven.jpeg" alt="Steven Cheng" class="steven_image">
+      <h2>My name is <strong><u>Steven Cheng</u></strong> and I'm currently a 3rd year ECE/CS student studying at Duke University. I will be interning at Amazon for Summer 2021!</h2>
+    </div>
+
+
+    <div class="section s1" data-anchor="about_section">
+      <h1>About Me</h1>
+      <p>
+        I am an aspiring Machine Learning Engineer currently doing research at the intersection between machine learning and the biomedical sciences. My experiences include reducing noise in ultrasound scans with GANs and developing segmentation models of lungs from chest x-rays. In my spare time, I work on drones with ecological conservation purposes; an XPrize project that I am involved in at Duke.
+      </p>
+    </div>
+
+
+
+    <div class="section s2" data-anchor="project_section">
+      <h1>Projects</h1>
+      <div class="container-fluid d-flex flex-column vh-85">
+        <div class="row flex-fill d-flex justify-content-start">
+
+          <div class="col col-12 col-md-6 bordered">
+            <div class="card" id='mimicknet'>
+              <div class="card-body">
+                <div class="card-computer-text">
+                  <h4 class="card-title">Ultrasound with Deep Learning</h4>
+                  <h5 class="card-subtitle">ML Researcher</h5>
+                  <h6 class="card-text">Reducing Noise in Ultrasound Imaging with GANs.</h6>
+                </div>
+                <img src="../images/mimicknet.png" class="project_image" style="width:30%;">
+                <a href="mimicknet.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-12 col-md-6 bordered">
+            <div class="card" id="lung_segmentation">
+              <div class="card-body">
+                <div class="card-computer-text">
+                  <h4 class="card-title">Lung Segmentation</h4>
+                  <h5 class="card-subtitle">ML Engineer</h5>
+                  <h6 class="card-text">Developing lung segmentation models from chest X-rays.</h6>
+                </div>
+                <img src="../images/lung_segmentation.png" class="project_image" style="width:30%;">
+                <a href="lung_segmentation.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-12 col-md-6 bordered">
+            <div class="card" id="xprize">
+              <div class="card-body">
+                <div class="card-computer-text">
+                  <h4 class="card-title">Rainforest Conservation with Drones</h4>
+                  <h5 class="card-subtitle">Software Engineer</h5>
+                  <h6 class="card-text">Developing drones for environmental conservation.</h6>
+                </div>
+                <img src="../images/xprize.png" class="project_image" style="width:30%; border: 1px solid black;">
+                <a href="xprize.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col col-12 col-md-6 bordered">
+            <div class="card" id="auvsi">
+              <div class="card-body">
+                <div class="card-computer-text">
+                  <h4 class="card-title">Drone Object Detection</h4>
+                  <h5 class="card-subtitle">ML Engineer</h5>
+                  <h6 class="card-text">Integrating real-time object detection algorithms into drones.</h6>
+                </div>
+                <img src="../images/auvsi.png" class="project_image" style="width:30%;">
+                <a href="drone.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col col-12 col-md-6 bordered">
+            <div class="card" id="auvsi">
+              <div class="card-body">
+                <div class="card-computer-text">
+                  <h4 class="card-title">And more to come!</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="section s3" data-anchor="contact_section">
+      <h1>Contact</h1>
+      <div class="container">
+        <div class="contact-row">
+          <div class="inner">
+            <span class="list_logo" id="Email"></span>
+            <div class="list_text">
+              <h5>Email</h5>
+              <a href="mailto:sc618@duke.edu">sc618@duke.edu</a>
+            </div>
+          </div>
+          <div class="inner">
+            <span class="list_logo" id="GitHub"></span>
+            <div class="list_text">
+              <h5>GitHub</h5>
+              <a href="https://github.com/stevencheng1220">stevencheng1220</a>
+            </div>
+          </div>
+          <div class="inner">
+            <span class="list_logo" id="LinkedIn"></span>
+            <div class="list_text">
+              <h5>LinkedIn</h5>
+              <a href="https://www.linkedin.com/in/stevencheng1220/">stevencheng1220</a>
+            </div>
+          </div>
+          <div class="inner">
+            <span class="list_logo" id="Twitter"></span>
+            <div class="list_text">
+              <h5>Twitter</h5>
+              <a href="https://twitter.com/stevencheng1220">@stevencheng1220</a>
+            </div>
+          </div>
+          <div class="inner">
+            <span class="list_logo" id="Resume"></span>
+            <div class="list_text">
+              <h5>Resume</h5>
+              <a href="https://drive.google.com/file/d/160VQZ92tqiYoFW-BzKHYYS8htHbAio0g/view?usp=sharing">Updated 8/2/2021</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- <script src="js/config.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="../js/fullpage.js"></script>
+  <script src="../js/navbar.js"></script>
+</body>
+</html>
